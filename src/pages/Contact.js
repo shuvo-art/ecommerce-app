@@ -5,14 +5,14 @@ import { FaHome } from "react-icons/fa";
 import { IoCall } from "react-icons/io5";
 import { IoMdMail } from "react-icons/io";
 import { FaInfoCircle } from "react-icons/fa";
+import Container from '../components/Container';
 
 const Contact = () => {
   return (
     <>
         <Meta title="Contact Us" />
         <BreadCrumb title="Contact Us" />
-        <div className="contact-wrapper home-wrapper-2 py-5">
-          <div className="container-xxl">
+        <Container class1="contact-wrapper home-wrapper-2 py-5">
             <div className="row">
               <div className="col-12">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.269222021801!2d90.35420287607367!3d23.773425578654766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c144b7110de7%3A0xf36f6a3eacef9a85!2sAdabor%2010!5e0!3m2!1sen!2sbd!4v1720106403263!5m2!1sen!2sbd" width="600" height="450" className="border-0 w-100" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
@@ -84,8 +84,7 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
+        </Container>
     </>
   );
 };

@@ -2,12 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { IoArrowBack } from "react-icons/io5";
 import watch from '../images/watch.jpg';
+import Container from '../components/Container';
 
 const Checkout = () => {
   return (
     <>
-        <div className="checkout-wrapper py-5 home-wrapper-2">
-            <div className="container-xxl">
+        <Container class1="checkout-wrapper py-5 home-wrapper-2">
                 <div className="row">
                     <div className="col-7">
                         <h3 className="website-name">ECommerce</h3>
@@ -106,8 +106,7 @@ const Checkout = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+        </Container>
     </>
   );
 };

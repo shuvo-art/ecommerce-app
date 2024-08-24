@@ -8,6 +8,7 @@ import Color from '../components/Color';
 import { Link } from 'react-router-dom';
 import { TbGitCompare } from "react-icons/tb";
 import { IoMdHeartEmpty } from "react-icons/io";
+import Container from '../components/Container';
 
 const SingleProduct = () => {
     const props = {width: 600, height: 500, zoomWidth: 500, img: "https://ae01.alicdn.com/kf/HTB16TW.PVXXXXaFXVXXq6xXFXXXK/Fashion-simple-stylish-Top-Luxury-brand-MEGIR-Watches-men-Stainless-Steel-Mesh-strap-band-Quartz-watch.jpg"};
@@ -25,8 +26,7 @@ const SingleProduct = () => {
     <>
         <Meta title="Product Name" />
         <BreadCrumb title="Product Name" />
-        <div className="main-product-wrapper home-wrapper-2 py-5">
-            <div className="container-xxl">
+        <Container class1="main-product-wrapper home-wrapper-2 py-5">
                 <div className="row">
                     <div className="col-6">
                         <div className="main-product-image">
@@ -144,9 +144,8 @@ const SingleProduct = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <section className="description-wrapper home-wrapper-2 py-5">
+        </Container>
+        <Container className="description-wrapper home-wrapper-2 py-5">
             <div className="container-xxl">
                 <div className="row">
                     <div className="col-12">
@@ -160,9 +159,8 @@ const SingleProduct = () => {
                     </div>
                 </div>
             </div>
-        </section>
-        <section className="reviews-wrapper home-wrapper-2">
-            <div className="container-xxl">
+        </Container>
+        <Container class1="reviews-wrapper home-wrapper-2">
                 <div className="row">
                     <div className="col-12">
                         <h3 id="review">Reviews</h3>
@@ -235,18 +233,51 @@ const SingleProduct = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section className="popular-wrapper py-5 home-wrapper-2">
-            <div className="container-xxl">
+        </Container>
+        <Container class1="popular-wrapper py-5 home-wrapper-2">
                 <div className="row">
                     <div className="col-12">
                     <h3 className="section-heading">Our Popular Products</h3>
                     </div>
                     <ProductCard />
                 </div>
+        </Container>
+
+        {/* <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div className="modal-dialog modal-dialog-centered">
+                <div className="modal-content">
+                    <div className="modal-header py-0 border-0">
+                        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div className="modal-body py-0">
+                        <div className="d-flex align-items-center">
+                            <div className="flex-grow-1 w-50">
+                                <img src={watch} className="img-fluid" alt="product image" />
+                            </div>
+                            <div className="d-flex flex-column flex-grow-1 w-50">
+                                <h6 className="mb-3">Apple Watch</h6>
+                                <p className="mb-1">Quantity: 100</p>
+                                <p className="mb-1">Color: Red</p>
+                                <p className="mb-1">Size: L</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="modal-footer border-0 py-0 justify-content-center gap-30">
+                        <button type="button" className="button" data-bs-dismiss="modal">View My Cart</button>
+                        <button type="button" className="button signup">Checkout</button>
+                    </div>
+                    <div className="d-flex justify-content-center py-3">
+                        <Link 
+                            className="text-dark" 
+                            to="/product" 
+                            onClick={() => {
+                            closeModal();
+                            }}
+                        >Continue To Shopping</Link>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div> */}
     </>
   );
 };

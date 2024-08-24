@@ -1,4 +1,4 @@
-const Data = [
+export const services = [
     {
         title: "Free Shipping",
         tagline: "Free all orders over $100",
